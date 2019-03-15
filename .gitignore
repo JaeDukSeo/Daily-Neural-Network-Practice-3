@@ -31,6 +31,7 @@
 *.csv
 *.gz
 *.wgt
+*.url
 
 /preparing_papers/*/*.ipynb
 /preparing_papers/*/*.png
