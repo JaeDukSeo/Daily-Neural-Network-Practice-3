@@ -93,6 +93,7 @@ def normalize_direction(direction, weights, norm='filter'):
           norm: normalization method, 'filter' | 'layer' | 'weight'
     """
     if norm == 'filter':
+        print(direction.shape)
         # Rescale the filters (weights in group) in 'direction' so that each
         # filter has the same norm as its corresponding filter in 'weights'.
         for d, w in zip(direction, weights):
