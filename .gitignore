@@ -32,6 +32,11 @@
 *.gz
 *.wgt
 *.url
+*.pyc
+*.DS_Store
+*.t7
+*.pth
+*.pdf
 
 /preparing_papers/*/*.ipynb
 /preparing_papers/*/*.png
