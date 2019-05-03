@@ -44,8 +44,6 @@ def name_surface_file(args, dir_file):
         surf_file += '_datasplit=' + str(args.data_split) + '_splitidx=' + str(args.split_idx)
 
     return surf_file + ".h5"
-
-
 def setup_surface_file(args, surf_file, dir_file):
     # skip if the direction file already exists
     if os.path.exists(surf_file):
@@ -68,8 +66,6 @@ def setup_surface_file(args, surf_file, dir_file):
     f.close()
 
     return surf_file
-
-
 def crunch(surf_file, net, w, s, d, dataloader, loss_key, acc_key, comm, rank, args):
     """
         Calculate the loss values and accuracies of modified models in parallel
