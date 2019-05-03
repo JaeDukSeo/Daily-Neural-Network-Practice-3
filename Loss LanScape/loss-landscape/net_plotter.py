@@ -97,6 +97,9 @@ def normalize_direction(direction, weights, norm='filter'):
         # filter has the same norm as its corresponding filter in 'weights'.
         for d, w in zip(direction, weights):
             d.mul_(w.norm()/(d.norm() + 1e-10))
+
+        import sys
+        sys.exit()
     elif norm == 'layer':
         # Rescale the layer variables in the direction so that each layer has
         # the same norm as the layer variables in weights.
